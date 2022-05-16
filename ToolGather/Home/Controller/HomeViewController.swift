@@ -58,8 +58,8 @@ extension HomeViewController: UITableViewDelegate,UITableViewDataSource  {
         let rawValue =  HomeSubmodule(rawValue: indexPath.row)
 
         switch rawValue {
-//        case .photoList:
-//            router?.gotoHomeSubmodule(.photoList, params: nil)
+        case .photoList:
+            router?.gotoHomeSubmodule(.photoList, params: nil)
 
 //        case .dSBridge:
 //            router?.gotoHomeSubmodule(.dSBridge, params: nil)
