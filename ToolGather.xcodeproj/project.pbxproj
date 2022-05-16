@@ -1,0 +1,857 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 55;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		2423000D950188C357D63FC0 /* Pods_ToolGather.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9C4CD763EA2A9D4E9A702F17 /* Pods_ToolGather.framework */; };
+		AD21B84A2831E81900684595 /* UIDevice+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = AD21B83D2831E81900684595 /* UIDevice+Extension.swift */; };
+		AD21B84B2831E81900684595 /* LayoutTool.swift in Sources */ = {isa = PBXBuildFile; fileRef = AD21B83E2831E81900684595 /* LayoutTool.swift */; };
+		AD21B84C2831E81900684595 /* LayoutMethod.swift in Sources */ = {isa = PBXBuildFile; fileRef = AD21B83F2831E81900684595 /* LayoutMethod.swift */; };
+		AD21B84D2831E81900684595 /* HomeRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = AD21B8412831E81900684595 /* HomeRouter.swift */; };
+		AD21B84E2831E81900684595 /* NetworkManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = AD21B8432831E81900684595 /* NetworkManager.swift */; };
+		AD21B84F2831E81900684595 /* WebAPI.swift in Sources */ = {isa = PBXBuildFile; fileRef = AD21B8442831E81900684595 /* WebAPI.swift */; };
+		AD21B8502831E81900684595 /* UIView + Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = AD21B8462831E81900684595 /* UIView + Extension.swift */; };
+		AD21B8512831E81900684595 /* UIColor + Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = AD21B8472831E81900684595 /* UIColor + Extension.swift */; };
+		AD21B8522831E81900684595 /* NSObject + Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = AD21B8482831E81900684595 /* NSObject + Extension.swift */; };
+		AD21B8532831E81900684595 /* UITableView+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = AD21B8492831E81900684595 /* UITableView+Extension.swift */; };
+		AD21B85C2831E83700684595 /* BaseViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AD21B8552831E83700684595 /* BaseViewController.swift */; };
+		AD21B85D2831E83700684595 /* AppRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = AD21B8562831E83700684595 /* AppRouter.swift */; };
+		AD21B85E2831E83700684595 /* ThirdLibsManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = AD21B8572831E83700684595 /* ThirdLibsManager.swift */; };
+		AD21B85F2831E83700684595 /* RootTabBarController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AD21B8582831E83700684595 /* RootTabBarController.swift */; };
+		AD21B8602831E83700684595 /* OnBoarding.swift in Sources */ = {isa = PBXBuildFile; fileRef = AD21B8592831E83700684595 /* OnBoarding.swift */; };
+		AD21B8612831E83700684595 /* AppPreferences.swift in Sources */ = {isa = PBXBuildFile; fileRef = AD21B85A2831E83700684595 /* AppPreferences.swift */; };
+		AD21B8622831E83700684595 /* RootNavigationViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AD21B85B2831E83700684595 /* RootNavigationViewController.swift */; };
+		AD21B86D2831F0DA00684595 /* HomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AD21B86C2831F0DA00684595 /* HomeViewController.swift */; };
+		AD21B86F2831F10D00684595 /* MineViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AD21B86E2831F10D00684595 /* MineViewController.swift */; };
+		ADF376B2282F866E00390609 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = ADF376B1282F866E00390609 /* AppDelegate.swift */; };
+		ADF376B4282F866E00390609 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = ADF376B3282F866E00390609 /* SceneDelegate.swift */; };
+		ADF376B9282F866E00390609 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = ADF376B7282F866E00390609 /* Main.storyboard */; };
+		ADF376BB282F867000390609 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = ADF376BA282F867000390609 /* Assets.xcassets */; };
+		ADF376BE282F867000390609 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = ADF376BC282F867000390609 /* LaunchScreen.storyboard */; };
+		ADF376C9282F867100390609 /* ToolGatherTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = ADF376C8282F867100390609 /* ToolGatherTests.swift */; };
+		ADF376D3282F867100390609 /* ToolGatherUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = ADF376D2282F867100390609 /* ToolGatherUITests.swift */; };
+		ADF376D5282F867100390609 /* ToolGatherUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = ADF376D4282F867100390609 /* ToolGatherUITestsLaunchTests.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		ADF376C5282F867100390609 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = ADF376A6282F866E00390609 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = ADF376AD282F866E00390609;
+			remoteInfo = ToolGather;
+		};
+		ADF376CF282F867100390609 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = ADF376A6282F866E00390609 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = ADF376AD282F866E00390609;
+			remoteInfo = ToolGather;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		9C4CD763EA2A9D4E9A702F17 /* Pods_ToolGather.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_ToolGather.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		AD21B83D2831E81900684595 /* UIDevice+Extension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIDevice+Extension.swift"; sourceTree = "<group>"; };
+		AD21B83E2831E81900684595 /* LayoutTool.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LayoutTool.swift; sourceTree = "<group>"; };
+		AD21B83F2831E81900684595 /* LayoutMethod.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LayoutMethod.swift; sourceTree = "<group>"; };
+		AD21B8412831E81900684595 /* HomeRouter.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HomeRouter.swift; sourceTree = "<group>"; };
+		AD21B8432831E81900684595 /* NetworkManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NetworkManager.swift; sourceTree = "<group>"; };
+		AD21B8442831E81900684595 /* WebAPI.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WebAPI.swift; sourceTree = "<group>"; };
+		AD21B8462831E81900684595 /* UIView + Extension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIView + Extension.swift"; sourceTree = "<group>"; };
+		AD21B8472831E81900684595 /* UIColor + Extension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIColor + Extension.swift"; sourceTree = "<group>"; };
+		AD21B8482831E81900684595 /* NSObject + Extension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "NSObject + Extension.swift"; sourceTree = "<group>"; };
+		AD21B8492831E81900684595 /* UITableView+Extension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UITableView+Extension.swift"; sourceTree = "<group>"; };
+		AD21B8552831E83700684595 /* BaseViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BaseViewController.swift; sourceTree = "<group>"; };
+		AD21B8562831E83700684595 /* AppRouter.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AppRouter.swift; sourceTree = "<group>"; };
+		AD21B8572831E83700684595 /* ThirdLibsManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ThirdLibsManager.swift; sourceTree = "<group>"; };
+		AD21B8582831E83700684595 /* RootTabBarController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RootTabBarController.swift; sourceTree = "<group>"; };
+		AD21B8592831E83700684595 /* OnBoarding.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = OnBoarding.swift; sourceTree = "<group>"; };
+		AD21B85A2831E83700684595 /* AppPreferences.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AppPreferences.swift; sourceTree = "<group>"; };
+		AD21B85B2831E83700684595 /* RootNavigationViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RootNavigationViewController.swift; sourceTree = "<group>"; };
+		AD21B8632831E8E600684595 /* ToolGather-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "ToolGather-Bridging-Header.h"; sourceTree = "<group>"; };
+		AD21B86C2831F0DA00684595 /* HomeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewController.swift; sourceTree = "<group>"; };
+		AD21B86E2831F10D00684595 /* MineViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MineViewController.swift; sourceTree = "<group>"; };
+		ADF376AE282F866E00390609 /* ToolGather.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ToolGather.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		ADF376B1282F866E00390609 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		ADF376B3282F866E00390609 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
+		ADF376B8282F866E00390609 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		ADF376BA282F867000390609 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		ADF376BD282F867000390609 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		ADF376BF282F867000390609 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		ADF376C4282F867100390609 /* ToolGatherTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = ToolGatherTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		ADF376C8282F867100390609 /* ToolGatherTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ToolGatherTests.swift; sourceTree = "<group>"; };
+		ADF376CE282F867100390609 /* ToolGatherUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = ToolGatherUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		ADF376D2282F867100390609 /* ToolGatherUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ToolGatherUITests.swift; sourceTree = "<group>"; };
+		ADF376D4282F867100390609 /* ToolGatherUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ToolGatherUITestsLaunchTests.swift; sourceTree = "<group>"; };
+		C87E89C1E9F271CC6DF8A13B /* Pods-ToolGather.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ToolGather.debug.xcconfig"; path = "Target Support Files/Pods-ToolGather/Pods-ToolGather.debug.xcconfig"; sourceTree = "<group>"; };
+		CE73C2367DC10A7A02C1881A /* Pods-ToolGather.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ToolGather.release.xcconfig"; path = "Target Support Files/Pods-ToolGather/Pods-ToolGather.release.xcconfig"; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		ADF376AB282F866E00390609 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				2423000D950188C357D63FC0 /* Pods_ToolGather.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		ADF376C1282F867100390609 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		ADF376CB282F867100390609 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		0EF18F8FD8138547C5DAEB80 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				C87E89C1E9F271CC6DF8A13B /* Pods-ToolGather.debug.xcconfig */,
+				CE73C2367DC10A7A02C1881A /* Pods-ToolGather.release.xcconfig */,
+			);
+			path = Pods;
+			sourceTree = "<group>";
+		};
+		3836C65A26918326C9C6048B /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				9C4CD763EA2A9D4E9A702F17 /* Pods_ToolGather.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		AD21B83C2831E81900684595 /* UIAdaptiveKit */ = {
+			isa = PBXGroup;
+			children = (
+				AD21B83D2831E81900684595 /* UIDevice+Extension.swift */,
+				AD21B83E2831E81900684595 /* LayoutTool.swift */,
+				AD21B83F2831E81900684595 /* LayoutMethod.swift */,
+			);
+			path = UIAdaptiveKit;
+			sourceTree = "<group>";
+		};
+		AD21B8402831E81900684595 /* UIRouter */ = {
+			isa = PBXGroup;
+			children = (
+				AD21B8412831E81900684595 /* HomeRouter.swift */,
+			);
+			path = UIRouter;
+			sourceTree = "<group>";
+		};
+		AD21B8422831E81900684595 /* Network */ = {
+			isa = PBXGroup;
+			children = (
+				AD21B8432831E81900684595 /* NetworkManager.swift */,
+				AD21B8442831E81900684595 /* WebAPI.swift */,
+			);
+			path = Network;
+			sourceTree = "<group>";
+		};
+		AD21B8452831E81900684595 /* Extension */ = {
+			isa = PBXGroup;
+			children = (
+				AD21B8462831E81900684595 /* UIView + Extension.swift */,
+				AD21B8472831E81900684595 /* UIColor + Extension.swift */,
+				AD21B8482831E81900684595 /* NSObject + Extension.swift */,
+				AD21B8492831E81900684595 /* UITableView+Extension.swift */,
+			);
+			path = Extension;
+			sourceTree = "<group>";
+		};
+		AD21B8542831E83700684595 /* Application */ = {
+			isa = PBXGroup;
+			children = (
+				AD21B8582831E83700684595 /* RootTabBarController.swift */,
+				AD21B8552831E83700684595 /* BaseViewController.swift */,
+				AD21B85B2831E83700684595 /* RootNavigationViewController.swift */,
+				AD21B8562831E83700684595 /* AppRouter.swift */,
+				AD21B8572831E83700684595 /* ThirdLibsManager.swift */,
+				AD21B8592831E83700684595 /* OnBoarding.swift */,
+				AD21B85A2831E83700684595 /* AppPreferences.swift */,
+			);
+			path = Application;
+			sourceTree = "<group>";
+		};
+		AD21B8642831F07A00684595 /* Home */ = {
+			isa = PBXGroup;
+			children = (
+				AD21B8682831F0A000684595 /* Model */,
+				AD21B8672831F09B00684595 /* View */,
+				AD21B8662831F09400684595 /* Controller */,
+			);
+			path = Home;
+			sourceTree = "<group>";
+		};
+		AD21B8652831F08A00684595 /* Mine */ = {
+			isa = PBXGroup;
+			children = (
+				AD21B86B2831F0B400684595 /* Model */,
+				AD21B86A2831F0AF00684595 /* View */,
+				AD21B8692831F0A600684595 /* Controller */,
+			);
+			path = Mine;
+			sourceTree = "<group>";
+		};
+		AD21B8662831F09400684595 /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				AD21B86C2831F0DA00684595 /* HomeViewController.swift */,
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		AD21B8672831F09B00684595 /* View */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		AD21B8682831F0A000684595 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		AD21B8692831F0A600684595 /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				AD21B86E2831F10D00684595 /* MineViewController.swift */,
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		AD21B86A2831F0AF00684595 /* View */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		AD21B86B2831F0B400684595 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		ADF376A5282F866E00390609 = {
+			isa = PBXGroup;
+			children = (
+				ADF376B0282F866E00390609 /* ToolGather */,
+				ADF376C7282F867100390609 /* ToolGatherTests */,
+				ADF376D1282F867100390609 /* ToolGatherUITests */,
+				ADF376AF282F866E00390609 /* Products */,
+				0EF18F8FD8138547C5DAEB80 /* Pods */,
+				3836C65A26918326C9C6048B /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		ADF376AF282F866E00390609 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				ADF376AE282F866E00390609 /* ToolGather.app */,
+				ADF376C4282F867100390609 /* ToolGatherTests.xctest */,
+				ADF376CE282F867100390609 /* ToolGatherUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		ADF376B0282F866E00390609 /* ToolGather */ = {
+			isa = PBXGroup;
+			children = (
+				ADF376B1282F866E00390609 /* AppDelegate.swift */,
+				ADF376B3282F866E00390609 /* SceneDelegate.swift */,
+				ADF376B7282F866E00390609 /* Main.storyboard */,
+				ADF376BA282F867000390609 /* Assets.xcassets */,
+				ADF376BC282F867000390609 /* LaunchScreen.storyboard */,
+				AD21B8632831E8E600684595 /* ToolGather-Bridging-Header.h */,
+				ADF376BF282F867000390609 /* Info.plist */,
+				AD21B8642831F07A00684595 /* Home */,
+				AD21B8652831F08A00684595 /* Mine */,
+				AD21B8542831E83700684595 /* Application */,
+				AD21B8452831E81900684595 /* Extension */,
+				AD21B8422831E81900684595 /* Network */,
+				AD21B83C2831E81900684595 /* UIAdaptiveKit */,
+				AD21B8402831E81900684595 /* UIRouter */,
+			);
+			path = ToolGather;
+			sourceTree = "<group>";
+		};
+		ADF376C7282F867100390609 /* ToolGatherTests */ = {
+			isa = PBXGroup;
+			children = (
+				ADF376C8282F867100390609 /* ToolGatherTests.swift */,
+			);
+			path = ToolGatherTests;
+			sourceTree = "<group>";
+		};
+		ADF376D1282F867100390609 /* ToolGatherUITests */ = {
+			isa = PBXGroup;
+			children = (
+				ADF376D2282F867100390609 /* ToolGatherUITests.swift */,
+				ADF376D4282F867100390609 /* ToolGatherUITestsLaunchTests.swift */,
+			);
+			path = ToolGatherUITests;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		ADF376AD282F866E00390609 /* ToolGather */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = ADF376D8282F867100390609 /* Build configuration list for PBXNativeTarget "ToolGather" */;
+			buildPhases = (
+				2F92F406B9E0FCFD6F644C3F /* [CP] Check Pods Manifest.lock */,
+				ADF376AA282F866E00390609 /* Sources */,
+				ADF376AB282F866E00390609 /* Frameworks */,
+				ADF376AC282F866E00390609 /* Resources */,
+				DAE03CF800236BECDFBDAA4A /* [CP] Embed Pods Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = ToolGather;
+			productName = ToolGather;
+			productReference = ADF376AE282F866E00390609 /* ToolGather.app */;
+			productType = "com.apple.product-type.application";
+		};
+		ADF376C3282F867100390609 /* ToolGatherTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = ADF376DB282F867100390609 /* Build configuration list for PBXNativeTarget "ToolGatherTests" */;
+			buildPhases = (
+				ADF376C0282F867100390609 /* Sources */,
+				ADF376C1282F867100390609 /* Frameworks */,
+				ADF376C2282F867100390609 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				ADF376C6282F867100390609 /* PBXTargetDependency */,
+			);
+			name = ToolGatherTests;
+			productName = ToolGatherTests;
+			productReference = ADF376C4282F867100390609 /* ToolGatherTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		ADF376CD282F867100390609 /* ToolGatherUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = ADF376DE282F867100390609 /* Build configuration list for PBXNativeTarget "ToolGatherUITests" */;
+			buildPhases = (
+				ADF376CA282F867100390609 /* Sources */,
+				ADF376CB282F867100390609 /* Frameworks */,
+				ADF376CC282F867100390609 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				ADF376D0282F867100390609 /* PBXTargetDependency */,
+			);
+			name = ToolGatherUITests;
+			productName = ToolGatherUITests;
+			productReference = ADF376CE282F867100390609 /* ToolGatherUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		ADF376A6282F866E00390609 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = 1;
+				LastSwiftUpdateCheck = 1330;
+				LastUpgradeCheck = 1330;
+				TargetAttributes = {
+					ADF376AD282F866E00390609 = {
+						CreatedOnToolsVersion = 13.3.1;
+					};
+					ADF376C3282F867100390609 = {
+						CreatedOnToolsVersion = 13.3.1;
+						TestTargetID = ADF376AD282F866E00390609;
+					};
+					ADF376CD282F867100390609 = {
+						CreatedOnToolsVersion = 13.3.1;
+						TestTargetID = ADF376AD282F866E00390609;
+					};
+				};
+			};
+			buildConfigurationList = ADF376A9282F866E00390609 /* Build configuration list for PBXProject "ToolGather" */;
+			compatibilityVersion = "Xcode 13.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = ADF376A5282F866E00390609;
+			productRefGroup = ADF376AF282F866E00390609 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				ADF376AD282F866E00390609 /* ToolGather */,
+				ADF376C3282F867100390609 /* ToolGatherTests */,
+				ADF376CD282F867100390609 /* ToolGatherUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		ADF376AC282F866E00390609 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				ADF376BE282F867000390609 /* LaunchScreen.storyboard in Resources */,
+				ADF376BB282F867000390609 /* Assets.xcassets in Resources */,
+				ADF376B9282F866E00390609 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		ADF376C2282F867100390609 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		ADF376CC282F867100390609 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		2F92F406B9E0FCFD6F644C3F /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-ToolGather-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		DAE03CF800236BECDFBDAA4A /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-ToolGather/Pods-ToolGather-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-ToolGather/Pods-ToolGather-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-ToolGather/Pods-ToolGather-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		ADF376AA282F866E00390609 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				AD21B86F2831F10D00684595 /* MineViewController.swift in Sources */,
+				AD21B85E2831E83700684595 /* ThirdLibsManager.swift in Sources */,
+				AD21B84B2831E81900684595 /* LayoutTool.swift in Sources */,
+				AD21B84D2831E81900684595 /* HomeRouter.swift in Sources */,
+				AD21B8622831E83700684595 /* RootNavigationViewController.swift in Sources */,
+				AD21B8602831E83700684595 /* OnBoarding.swift in Sources */,
+				AD21B84A2831E81900684595 /* UIDevice+Extension.swift in Sources */,
+				AD21B85F2831E83700684595 /* RootTabBarController.swift in Sources */,
+				AD21B8512831E81900684595 /* UIColor + Extension.swift in Sources */,
+				AD21B85C2831E83700684595 /* BaseViewController.swift in Sources */,
+				AD21B8522831E81900684595 /* NSObject + Extension.swift in Sources */,
+				AD21B84F2831E81900684595 /* WebAPI.swift in Sources */,
+				AD21B85D2831E83700684595 /* AppRouter.swift in Sources */,
+				AD21B86D2831F0DA00684595 /* HomeViewController.swift in Sources */,
+				AD21B84E2831E81900684595 /* NetworkManager.swift in Sources */,
+				ADF376B2282F866E00390609 /* AppDelegate.swift in Sources */,
+				AD21B84C2831E81900684595 /* LayoutMethod.swift in Sources */,
+				AD21B8502831E81900684595 /* UIView + Extension.swift in Sources */,
+				ADF376B4282F866E00390609 /* SceneDelegate.swift in Sources */,
+				AD21B8612831E83700684595 /* AppPreferences.swift in Sources */,
+				AD21B8532831E81900684595 /* UITableView+Extension.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		ADF376C0282F867100390609 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				ADF376C9282F867100390609 /* ToolGatherTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		ADF376CA282F867100390609 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				ADF376D3282F867100390609 /* ToolGatherUITests.swift in Sources */,
+				ADF376D5282F867100390609 /* ToolGatherUITestsLaunchTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		ADF376C6282F867100390609 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = ADF376AD282F866E00390609 /* ToolGather */;
+			targetProxy = ADF376C5282F867100390609 /* PBXContainerItemProxy */;
+		};
+		ADF376D0282F867100390609 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = ADF376AD282F866E00390609 /* ToolGather */;
+			targetProxy = ADF376CF282F867100390609 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		ADF376B7282F866E00390609 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				ADF376B8282F866E00390609 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		ADF376BC282F867000390609 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				ADF376BD282F867000390609 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		ADF376D6282F867100390609 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++17";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.4;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		ADF376D7282F867100390609 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++17";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.4;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		ADF376D9282F867100390609 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = C87E89C1E9F271CC6DF8A13B /* Pods-ToolGather.debug.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 73BJF2RYJB;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = ToolGather/Info.plist;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
+				INFOPLIST_KEY_UIMainStoryboardFile = Main;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.cooperation.tool.ToolGather;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_OBJC_BRIDGING_HEADER = "/Users/yuliuyang/Desktop/Swift/ToolGather/ToolGather/ToolGather-Bridging-Header.h";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		ADF376DA282F867100390609 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = CE73C2367DC10A7A02C1881A /* Pods-ToolGather.release.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 73BJF2RYJB;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = ToolGather/Info.plist;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
+				INFOPLIST_KEY_UIMainStoryboardFile = Main;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.cooperation.tool.ToolGather;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_OBJC_BRIDGING_HEADER = "/Users/yuliuyang/Desktop/Swift/ToolGather/ToolGather/ToolGather-Bridging-Header.h";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		ADF376DC282F867100390609 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 73BJF2RYJB;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.4;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.cooperation.tool.ToolGatherTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/ToolGather.app/ToolGather";
+			};
+			name = Debug;
+		};
+		ADF376DD282F867100390609 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 73BJF2RYJB;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.4;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.cooperation.tool.ToolGatherTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/ToolGather.app/ToolGather";
+			};
+			name = Release;
+		};
+		ADF376DF282F867100390609 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 73BJF2RYJB;
+				GENERATE_INFOPLIST_FILE = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.cooperation.tool.ToolGatherUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = ToolGather;
+			};
+			name = Debug;
+		};
+		ADF376E0282F867100390609 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 73BJF2RYJB;
+				GENERATE_INFOPLIST_FILE = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.cooperation.tool.ToolGatherUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = ToolGather;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		ADF376A9282F866E00390609 /* Build configuration list for PBXProject "ToolGather" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				ADF376D6282F867100390609 /* Debug */,
+				ADF376D7282F867100390609 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		ADF376D8282F867100390609 /* Build configuration list for PBXNativeTarget "ToolGather" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				ADF376D9282F867100390609 /* Debug */,
+				ADF376DA282F867100390609 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		ADF376DB282F867100390609 /* Build configuration list for PBXNativeTarget "ToolGatherTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				ADF376DC282F867100390609 /* Debug */,
+				ADF376DD282F867100390609 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		ADF376DE282F867100390609 /* Build configuration list for PBXNativeTarget "ToolGatherUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				ADF376DF282F867100390609 /* Debug */,
+				ADF376E0282F867100390609 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = ADF376A6282F866E00390609 /* Project object */;
+}

@@ -1,0 +1,47 @@
+PODS:
+  - Alamofire (5.6.1)
+  - AvoidCrash (2.5.2)
+  - DeviceKit (4.6.0)
+  - Kingfisher (6.3.1)
+  - Moya (15.0.0):
+    - Moya/Core (= 15.0.0)
+  - Moya/Core (15.0.0):
+    - Alamofire (~> 5.0)
+  - SnapKit (5.6.0)
+  - SwiftyJSON (5.0.1)
+  - SwiftyUserDefaults (4.0.0)
+
+DEPENDENCIES:
+  - Alamofire
+  - AvoidCrash (= 2.5.2)
+  - DeviceKit
+  - Kingfisher
+  - Moya
+  - SnapKit
+  - SwiftyJSON
+  - SwiftyUserDefaults (= 4.0.0)
+
+SPEC REPOS:
+  trunk:
+    - Alamofire
+    - AvoidCrash
+    - DeviceKit
+    - Kingfisher
+    - Moya
+    - SnapKit
+    - SwiftyJSON
+    - SwiftyUserDefaults
+
+SPEC CHECKSUMS:
+  Alamofire: 87bd8c952f9a4454320fce00d9cc3de57bcadaf5
+  AvoidCrash: 28c6916fe19bd2b84126b8dec7cbe61c9a12741d
+  DeviceKit: 834dd8aa1be53cd85364d8f49aa5d98bfac397c4
+  Kingfisher: 016c8b653a35add51dd34a3aba36b580041acc74
+  Moya: 138f0573e53411fb3dc17016add0b748dfbd78ee
+  SnapKit: e01d52ebb8ddbc333eefe2132acf85c8227d9c25
+  SwiftyJSON: 2f33a42c6fbc52764d96f13368585094bfd8aa5e
+  SwiftyUserDefaults: 6a1951df1daa19337862b677dd9a4b9bd4c288cd
+
+PODFILE CHECKSUM: 4451741a8ee142121a4d1e99ede2ab865732acc1
+
+COCOAPODS: 1.11.2
