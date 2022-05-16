@@ -14,7 +14,7 @@ target 'ToolGather' do
 	pod 'Alamofire'
 	pod 'SnapKit'
 	pod 'SwiftyJSON'
-  #pod 'HandyJSON', '5.0.0-beta'
+  pod 'HandyJSON'
   pod 'Moya'
   #pod 'BayMaxProtector'
   

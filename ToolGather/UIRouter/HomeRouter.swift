@@ -32,11 +32,11 @@ enum HomeSubmodule: Int {
     case faceRecognition
     
     //["alamofire + moya + HandyJson使用", "DSBridge H5和原生的交互", "反射_基本用法" ,"反射_模型转字典", "WCDB数据库", "WebRTC 音视频直播"]
-//    var modualDescribtion : String {
-//        switch self {
-//        case .photoList:
-//           return "alamofire + moya + HandyJson使用"
-//
+    var modualDescribtion : String {
+        switch self {
+        case .photoList:
+           return "alamofire + moya + HandyJson使用"
+
 //            case .dSBridge:
 //               return "DSBridge H5和原生的交互"
 //
@@ -54,33 +54,36 @@ enum HomeSubmodule: Int {
 //
 //            case .faceRecognition:
 //               return "人脸识别"
-//        }
-//    }
+        default :
+            return ""
+            break
+        }
+    }
     
     static let count = 7
 }
 
 class HomeRouter {
     
-//    weak var contextViewController: HomeViewController?
-//
-//    init(_ contextViewController: HomeViewController) {
-//        self.contextViewController = contextViewController
-//    }
+    weak var contextViewController: HomeViewController?
+
+    init(_ contextViewController: HomeViewController) {
+        self.contextViewController = contextViewController
+    }
 }
 
-//extension HomeRouter: HomeRouterHandle {
-//
-//    // MARK: - 跳转到相应的模块
-//    func gotoHomeSubmodule(_ submodule: HomeSubmodule, params: Dictionary<String, Any>?) {
-//
-//        switch submodule {
+extension HomeRouter: HomeRouterHandle {
+
+    // MARK: - 跳转到相应的模块
+    func gotoHomeSubmodule(_ submodule: HomeSubmodule, params: Dictionary<String, Any>?) {
+
+        switch submodule {
             
-//            case .photoList:
-//
-//                let vc = SwiftyJSON_HandyJson_VC.init()
-//                self.contextViewController?.navigationController?.pushViewController(vc, animated: true)
-//
+            case .photoList:
+
+                let vc = SwiftyJSON_HandyJson_VC.init()
+                self.contextViewController?.navigationController?.pushViewController(vc, animated: true)
+
 //            case .dSBridge:
 //                let vc = DSbridgeViewController.init()
 //                self.contextViewController?.navigationController?.pushViewController(vc, animated: true)
@@ -106,8 +109,8 @@ class HomeRouter {
 //                let vc = FaceDetectionViewController.init()
 //                self.contextViewController?.navigationController?.pushViewController(vc, animated: true)
             
-//            default :
-//                break
-//        }
-//    }
-//}
+            default :
+                break
+        }
+    }
+}

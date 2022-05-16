@@ -27,6 +27,8 @@
 		AD21B8622831E83700684595 /* RootNavigationViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AD21B85B2831E83700684595 /* RootNavigationViewController.swift */; };
 		AD21B86D2831F0DA00684595 /* HomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AD21B86C2831F0DA00684595 /* HomeViewController.swift */; };
 		AD21B86F2831F10D00684595 /* MineViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AD21B86E2831F10D00684595 /* MineViewController.swift */; };
+		AD21B8712832387900684595 /* SwiftJson_HandyJson_VC.swift in Sources */ = {isa = PBXBuildFile; fileRef = AD21B8702832387900684595 /* SwiftJson_HandyJson_VC.swift */; };
+		AD21B8732832394C00684595 /* SamTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = AD21B8722832394C00684595 /* SamTableViewCell.swift */; };
 		ADF376B2282F866E00390609 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = ADF376B1282F866E00390609 /* AppDelegate.swift */; };
 		ADF376B4282F866E00390609 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = ADF376B3282F866E00390609 /* SceneDelegate.swift */; };
 		ADF376B9282F866E00390609 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = ADF376B7282F866E00390609 /* Main.storyboard */; };
@@ -76,6 +78,8 @@
 		AD21B8632831E8E600684595 /* ToolGather-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "ToolGather-Bridging-Header.h"; sourceTree = "<group>"; };
 		AD21B86C2831F0DA00684595 /* HomeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewController.swift; sourceTree = "<group>"; };
 		AD21B86E2831F10D00684595 /* MineViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MineViewController.swift; sourceTree = "<group>"; };
+		AD21B8702832387900684595 /* SwiftJson_HandyJson_VC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SwiftJson_HandyJson_VC.swift; sourceTree = "<group>"; };
+		AD21B8722832394C00684595 /* SamTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SamTableViewCell.swift; sourceTree = "<group>"; };
 		ADF376AE282F866E00390609 /* ToolGather.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ToolGather.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		ADF376B1282F866E00390609 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		ADF376B3282F866E00390609 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -211,6 +215,7 @@
 			isa = PBXGroup;
 			children = (
 				AD21B86C2831F0DA00684595 /* HomeViewController.swift */,
+				AD21B8702832387900684595 /* SwiftJson_HandyJson_VC.swift */,
 			);
 			path = Controller;
 			sourceTree = "<group>";
@@ -218,6 +223,7 @@
 		AD21B8672831F09B00684595 /* View */ = {
 			isa = PBXGroup;
 			children = (
+				AD21B8722832394C00684595 /* SamTableViewCell.swift */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -492,11 +498,13 @@
 				AD21B84D2831E81900684595 /* HomeRouter.swift in Sources */,
 				AD21B8622831E83700684595 /* RootNavigationViewController.swift in Sources */,
 				AD21B8602831E83700684595 /* OnBoarding.swift in Sources */,
+				AD21B8732832394C00684595 /* SamTableViewCell.swift in Sources */,
 				AD21B84A2831E81900684595 /* UIDevice+Extension.swift in Sources */,
 				AD21B85F2831E83700684595 /* RootTabBarController.swift in Sources */,
 				AD21B8512831E81900684595 /* UIColor + Extension.swift in Sources */,
 				AD21B85C2831E83700684595 /* BaseViewController.swift in Sources */,
 				AD21B8522831E81900684595 /* NSObject + Extension.swift in Sources */,
+				AD21B8712832387900684595 /* SwiftJson_HandyJson_VC.swift in Sources */,
 				AD21B84F2831E81900684595 /* WebAPI.swift in Sources */,
 				AD21B85D2831E83700684595 /* AppRouter.swift in Sources */,
 				AD21B86D2831F0DA00684595 /* HomeViewController.swift in Sources */,

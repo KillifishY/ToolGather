@@ -7,6 +7,10 @@
 
 import UIKit
 
+protocol HomeRouterHandle {
+    func gotoHomeSubmodule(_ submodule: HomeSubmodule, params: Dictionary<String, Any>?)
+}
+
 class HomeViewController: BaseViewController {
 
     private var router: HomeRouter?
@@ -25,7 +29,7 @@ class HomeViewController: BaseViewController {
         super.viewDidLoad()
         self.view.backgroundColor = .white
         
-//        router = HomeRouter.init(self)
+        router = HomeRouter.init(self)
 
         self.navigationItem.title = "首页"
         self.view.addSubview(tableview)
@@ -45,18 +49,18 @@ extension HomeViewController: UITableViewDelegate,UITableViewDataSource  {
 
         let cell = tableView.dequeueReusableCell(with: UITableViewCell.self, for: indexPath) as UITableViewCell
         cell.selectionStyle = .none
-//        cell.textLabel?.text = HomeSubmodule(rawValue: indexPath.row)?.modualDescribtion
+        cell.textLabel?.text = HomeSubmodule(rawValue: indexPath.row)?.modualDescribtion
         return cell
     }
 
     func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath){
         tableView.deselectRow(at: indexPath, animated: false)
         let rawValue =  HomeSubmodule(rawValue: indexPath.row)
-//
-//        switch rawValue {
+
+        switch rawValue {
 //        case .photoList:
 //            router?.gotoHomeSubmodule(.photoList, params: nil)
-//
+
 //        case .dSBridge:
 //            router?.gotoHomeSubmodule(.dSBridge, params: nil)
 //
@@ -72,12 +76,12 @@ extension HomeViewController: UITableViewDelegate,UITableViewDataSource  {
 //        case .WebRTC_VC:
 //            router?.gotoHomeSubmodule(.WebRTC_VC, params: nil)
 //
-//            case .faceRecognition:
-//                router?.gotoHomeSubmodule(.faceRecognition, params: nil)
-//
-//        default:
-//            break
-//        }
+//        case .faceRecognition:
+//              router?.gotoHomeSubmodule(.faceRecognition, params: nil)
+
+        default:
+            break
+        }
     }
     
 }
