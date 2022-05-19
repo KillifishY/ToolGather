@@ -49,5 +49,6 @@ target 'ToolGather' do
   pod 'NotificationBannerSwift', '~> 3.0.0'
   pod 'AnimatedCollectionViewLayout'
   pod "ESTabBarController-swift"
+  pod 'FoldingCell'
 
 end
