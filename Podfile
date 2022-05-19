@@ -2,9 +2,9 @@
 
 platform :ios, '10.0'
 # For CocoaPods 1.8.0 或以上版本，使用cdn来避免clone master，加快pod update的速度。
-#source 'https://github.com/CocoaPods/Specs.git'
+source 'https://github.com/CocoaPods/Specs.git'
 #source 'https://cdn.cocoapods.org/'
-source 'https://mirrors.tuna.tsinghua.edu.cn/git/CocoaPods/Specs.git'
+#source 'https://mirrors.tuna.tsinghua.edu.cn/git/CocoaPods/Specs.git'
 
 target 'ToolGather' do
   # Comment the next line if you're not using Swift and don't want to use dynamic frameworks
@@ -12,7 +12,7 @@ target 'ToolGather' do
 
 	pod 'Kingfisher'
 	pod 'Alamofire'
-	pod 'SnapKit'
+	pod 'SnapKit', '~> 5.0.0'
 	pod 'SwiftyJSON'
   pod 'HandyJSON'
   pod 'Moya'
@@ -42,6 +42,12 @@ target 'ToolGather' do
   #layout
   pod 'DeviceKit'
   pod 'NVActivityIndicatorView'
-  pod 'FoldingCell'
+  #pod 'FoldingCell'
   pod 'FSPagerView'
+  pod 'SideMenu'
+  pod 'TOCropViewController'
+  pod 'NotificationBannerSwift', '~> 3.0.0'
+  pod 'AnimatedCollectionViewLayout'
+  pod "ESTabBarController-swift"
+
 end

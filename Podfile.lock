@@ -1,29 +1,58 @@
 PODS:
   - Alamofire (5.6.1)
+  - AnimatedCollectionViewLayout (1.1.0)
   - AvoidCrash (2.5.2)
   - DeviceKit (4.6.0)
+  - ESTabBarController-swift (2.8.0)
+  - FSPagerView (0.8.3)
   - HandyJSON (5.0.2)
   - Kingfisher (6.3.1)
+  - MarqueeLabel (4.0.5)
   - Moya (15.0.0):
     - Moya/Core (= 15.0.0)
   - Moya/Core (15.0.0):
     - Alamofire (~> 5.0)
-  - SnapKit (5.6.0)
+  - NotificationBannerSwift (3.0.6):
+    - MarqueeLabel (~> 4.0.5)
+    - SnapKit (~> 5.0.1)
+  - NVActivityIndicatorView (5.1.1):
+    - NVActivityIndicatorView/Base (= 5.1.1)
+  - NVActivityIndicatorView/Base (5.1.1)
+  - SideMenu (6.5.0)
+  - SnapKit (5.0.1)
   - SwiftyJSON (5.0.1)
   - SwiftyUserDefaults (4.0.0)
+  - TOCropViewController (2.6.0)
 
 DEPENDENCIES:
   - Alamofire
+  - AnimatedCollectionViewLayout
   - AvoidCrash (= 2.5.2)
   - DeviceKit
+  - ESTabBarController-swift
+  - FSPagerView
   - HandyJSON
   - Kingfisher
   - Moya
-  - SnapKit
+  - NotificationBannerSwift (~> 3.0.0)
+  - NVActivityIndicatorView
+  - SideMenu
+  - SnapKit (~> 5.0.0)
   - SwiftyJSON
   - SwiftyUserDefaults (= 4.0.0)
+  - TOCropViewController
 
 SPEC REPOS:
+  https://github.com/CocoaPods/Specs.git:
+    - AnimatedCollectionViewLayout
+    - ESTabBarController-swift
+    - FSPagerView
+    - MarqueeLabel
+    - NotificationBannerSwift
+    - NVActivityIndicatorView
+    - SideMenu
+    - SnapKit
+    - TOCropViewController
   trunk:
     - Alamofire
     - AvoidCrash
@@ -31,21 +60,28 @@ SPEC REPOS:
     - HandyJSON
     - Kingfisher
     - Moya
-    - SnapKit
     - SwiftyJSON
     - SwiftyUserDefaults
 
 SPEC CHECKSUMS:
   Alamofire: 87bd8c952f9a4454320fce00d9cc3de57bcadaf5
+  AnimatedCollectionViewLayout: 0c1a38c4be115c525c887be183fc91ef65737c5d
   AvoidCrash: 28c6916fe19bd2b84126b8dec7cbe61c9a12741d
   DeviceKit: 834dd8aa1be53cd85364d8f49aa5d98bfac397c4
+  ESTabBarController-swift: 05593a6ad64700b03c0eb60ff625916370aa4136
+  FSPagerView: 670405b2f18e2a87fa37f20b00de783e562c25a8
   HandyJSON: 9e4e236f5d2dbefad5155a77417bbea438201c03
   Kingfisher: 016c8b653a35add51dd34a3aba36b580041acc74
+  MarqueeLabel: 00cc0bcd087111dca575878b3531af980559707d
   Moya: 138f0573e53411fb3dc17016add0b748dfbd78ee
-  SnapKit: e01d52ebb8ddbc333eefe2132acf85c8227d9c25
+  NotificationBannerSwift: 7021be2338f8f29cf424b0aca43da462bf9e2a1a
+  NVActivityIndicatorView: 1f6c5687f1171810aa27a3296814dc2d7dec3667
+  SideMenu: f583187d21c5b1dd04c72002be544b555a2627a2
+  SnapKit: 97b92857e3df3a0c71833cce143274bf6ef8e5eb
   SwiftyJSON: 2f33a42c6fbc52764d96f13368585094bfd8aa5e
   SwiftyUserDefaults: 6a1951df1daa19337862b677dd9a4b9bd4c288cd
+  TOCropViewController: 3105367e808b7d3d886a74ff59bf4804e7d3ab38
 
-PODFILE CHECKSUM: 0f387021e1313c578581303d72886212af36c4fc
+PODFILE CHECKSUM: ccb8479f3828c20ca4f537e547d8d5453466bc24
 
 COCOAPODS: 1.11.2
