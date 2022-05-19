@@ -708,7 +708,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = com.cooperation.tool.ToolGather;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_EMIT_LOC_STRINGS = YES;
-				SWIFT_OBJC_BRIDGING_HEADER = "/Users/yuliuyang/Desktop/Swift/ToolGather/ToolGather/ToolGather-Bridging-Header.h";
+				SWIFT_OBJC_BRIDGING_HEADER = "$(PROJECT_DIR)//ToolGather/ToolGather-Bridging-Header.h";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
@@ -738,7 +738,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = com.cooperation.tool.ToolGather;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_EMIT_LOC_STRINGS = YES;
-				SWIFT_OBJC_BRIDGING_HEADER = "/Users/yuliuyang/Desktop/Swift/ToolGather/ToolGather/ToolGather-Bridging-Header.h";
+				SWIFT_OBJC_BRIDGING_HEADER = "$(PROJECT_DIR)//ToolGather/ToolGather-Bridging-Header.h";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
