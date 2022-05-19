@@ -12,7 +12,7 @@ class RootTabBarController: UITabBarController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
-
+        
         setupUI()
         creatSubViewControllers()
     }
@@ -22,6 +22,13 @@ class RootTabBarController: UITabBarController {
         let color: UIColor = UIColor.hexColor("0x000000")!
         UITabBarItem.appearance().setTitleTextAttributes([NSAttributedString.Key.foregroundColor : color], for: UIControl.State.selected)
         self.tabBar.barTintColor = .darkGray
+        self.tabBar.shadowImage = UIImage()
+        self.tabBar.backgroundColor = .white
+        
+        tabBar.layer.shadowColor = UIColor.lightGray.cgColor
+        tabBar.layer.shadowOffset = CGSize(width: 0, height: -5)
+        tabBar.layer.shadowOpacity = 0.3
+        tabBar.layer.shadowRadius = 5
     }
     
     func creatSubViewControllers(){

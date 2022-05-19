@@ -11,12 +11,11 @@ import Moya
 
 
 /// 定义基础域名
-let Moya_baseURL = "http://api.liwushuo.com/"
+let Moya_baseURL = "http://dj.smcic.net/"
 
 enum WebAPI{
     
     case getPhotoList//获取图片列表
-
     case updateAPi(parameters:[String:Any])
     case register(email:String,password:String)
     case uploadHeadImage(parameters: [String:Any],imageDate:Data)//上传用户头像
@@ -38,7 +37,7 @@ extension WebAPI : TargetType {
         switch self {
             
         case .getPhotoList:
-            return "v2/channels/104/items?ad=2&gender=2&generation=2&limit=20&offset=0"
+            return "category/move/list"
             
         case .register:
             return "register"

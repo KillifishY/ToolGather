@@ -11,7 +11,8 @@ import SnapKit
 
 class SamTableViewCell: UITableViewCell {
 
-    var iconImv:UIImageView!    // 头像
+    var titleLabel: UILabel!
+    var iconImv: UIImageView!    // 头像
 
     override func awakeFromNib() {
         super.awakeFromNib()
@@ -21,11 +22,17 @@ class SamTableViewCell: UITableViewCell {
 
     override init(style: UITableViewCell.CellStyle, reuseIdentifier: String?) {
         super.init(style: style, reuseIdentifier: reuseIdentifier)
-
+        
+        titleLabel = UILabel()
+        titleLabel.font = autoFontSize(14)
+        titleLabel.textColor = .black
+        
+        contentView.addSubview(titleLabel)
+        
         // 头像
         iconImv = UIImageView()
         iconImv.layer.masksToBounds = true
-        iconImv.layer.cornerRadius = 22.0
+        iconImv.layer.cornerRadius = 5.0
         iconImv.isUserInteractionEnabled = true
 
         contentView.addSubview(iconImv)
@@ -51,11 +58,16 @@ class SamTableViewCell: UITableViewCell {
     override func layoutSubviews() {
         super.layoutSubviews()
 
+        titleLabel.snp.makeConstraints { make in
+            make.left.top.equalToSuperview().offset(autoWidth(16))
+            make.right.equalToSuperview().offset(autoWidth(-90))
+        }
         //iconImv.frame = contentView.bounds
         iconImv.snp.makeConstraints { (make) in
-            make.edges.equalToSuperview().inset(UIEdgeInsets(top: 10, left: 10, bottom: 10, right: 10))
+            make.size.equalTo(CGSize(width: autoWidth(60), height: autoWidth(60)))
+            make.right.equalToSuperview().offset(autoWidth(-15))
+            make.top.equalTo(titleLabel)
         }
-
     }
 
     override func setSelected(_ selected: Bool, animated: Bool) {

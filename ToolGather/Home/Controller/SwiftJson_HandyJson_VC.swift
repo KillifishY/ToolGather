@@ -14,9 +14,8 @@ import HandyJSON
 // 相当于数据模型model
 struct ItemsModel: HandyJSON {
     
-    var cover_image_url = ""
-    var title  = ""
-    var likecount = ""
+    var imgUrl = ""
+    var name  = ""
 }
 
 class SwiftyJSON_HandyJson_VC: UIViewController,UITableViewDelegate,UITableViewDataSource {
@@ -26,7 +25,7 @@ class SwiftyJSON_HandyJson_VC: UIViewController,UITableViewDelegate,UITableViewD
         tableview.backgroundColor = .white
         tableview.delegate = self
         tableview.dataSource = self
-        tableview.rowHeight = 300
+        tableview.rowHeight = autoWidth(90)
         
         return tableview
     }()
@@ -54,7 +53,8 @@ class SwiftyJSON_HandyJson_VC: UIViewController,UITableViewDelegate,UITableViewD
 
         let cell = tableView.dequeueReusableCell(with: SamTableViewCell.self, for: indexPath)
         let model = self.dataArray[indexPath.row]
-        cell.iconImv.kf.setImage(with: URL(string: model.cover_image_url))
+        cell.iconImv.kf.setImage(with: URL(string: "https://gimg2.baidu.com/image_search/src=http%3A%2F%2Fimg.jj20.com%2Fup%2Fallimg%2F1114%2F0G020114924%2F200G0114924-15-1200.jpg&refer=http%3A%2F%2Fimg.jj20.com&app=2002&size=f9999,10000&q=a80&n=0&g=0n&fmt=auto?sec=1655460024&t=eda1ecdebab174791c9f8eea54fb443e"))
+        cell.titleLabel.text = model.name
         return cell
     }
 
@@ -69,7 +69,7 @@ extension SwiftyJSON_HandyJson_VC{
        
         NetworkManager.NetWorkRequest(.getPhotoList, completion: { (JSOnDictory) -> (Void) in//JSOnDictory 是Json类型
             //print(json)
-            let dataARR =  JSOnDictory["data"]["items"].arrayObject
+            let dataARR =  JSOnDictory["data"].arrayObject
             if let arr = JSONDeserializer<ItemsModel>.deserializeModelArrayFrom(array: dataARR) {
                 let arr1 = arr.compactMap({$0})
                 self.dataArray = arr1

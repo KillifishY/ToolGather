@@ -24,8 +24,6 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
 //        window = UIWindow(frame: UIScreen.main.bounds)
 //        window?.autoresizingMask = [.flexibleWidth, .flexibleHeight]
 //        window?.backgroundColor = .white
-//        
-//        
 //        onBoarding.start(with: AppRouter(window: window!))
 //        window?.makeKeyAndVisible()
         
