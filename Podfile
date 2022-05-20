@@ -2,8 +2,8 @@
 
 platform :ios, '10.0'
 # For CocoaPods 1.8.0 或以上版本，使用cdn来避免clone master，加快pod update的速度。
-#source 'https://github.com/CocoaPods/Specs.git'
-source 'https://cdn.cocoapods.org/'
+source 'https://github.com/CocoaPods/Specs.git'
+#source 'https://cdn.cocoapods.org/'
 #source 'https://mirrors.tuna.tsinghua.edu.cn/git/CocoaPods/Specs.git'
 
 target 'ToolGather' do
@@ -42,7 +42,6 @@ target 'ToolGather' do
   #layout
   pod 'DeviceKit'
   pod 'NVActivityIndicatorView'
-  #pod 'FoldingCell'
   pod 'FSPagerView'
   pod 'SideMenu'
   pod 'TOCropViewController'

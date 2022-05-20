@@ -13,8 +13,8 @@ enum HomeSubmodule: Int {
     ///图片列表 SwiftyJSON_HandyJson的使用
     case photoList
     
-    ///DSBridge H5和原生的交互
-    case dSBridge
+    ///FSPageView使用
+    case FSPageView
     
     ///字典转模型 反射
     case Model_To_Dictionary
@@ -37,8 +37,8 @@ enum HomeSubmodule: Int {
         case .photoList:
            return "alamofire + moya + HandyJson使用"
 
-//            case .dSBridge:
-//               return "DSBridge H5和原生的交互"
+            case .FSPageView:
+               return "FSPageView使用"
 //
 //            case .Model_To_Dictionary:
 //               return "反射_模型转字典"
@@ -84,10 +84,10 @@ extension HomeRouter: HomeRouterHandle {
                 let vc = SwiftyJSON_HandyJson_VC.init()
                 self.contextViewController?.navigationController?.pushViewController(vc, animated: true)
 
-//            case .dSBridge:
-//                let vc = DSbridgeViewController.init()
-//                self.contextViewController?.navigationController?.pushViewController(vc, animated: true)
-//
+            case .FSPageView:
+                let vc = YLYPageViewController.init()
+                self.contextViewController?.navigationController?.pushViewController(vc, animated: true)
+
 //            case .Model_To_Dictionary:
 //                let vc = Model_To_Dictionary.init()
 //                self.contextViewController?.navigationController?.pushViewController(vc, animated: true)

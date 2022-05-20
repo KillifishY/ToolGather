@@ -45,8 +45,7 @@ DEPENDENCIES:
   - TOCropViewController
 
 SPEC REPOS:
-  trunk:
-    - Alamofire
+  https://github.com/CocoaPods/Specs.git:
     - AnimatedCollectionViewLayout
     - AvoidCrash
     - DeviceKit
@@ -60,10 +59,12 @@ SPEC REPOS:
     - NotificationBannerSwift
     - NVActivityIndicatorView
     - SideMenu
-    - SnapKit
     - SwiftyJSON
     - SwiftyUserDefaults
     - TOCropViewController
+  https://mirrors.tuna.tsinghua.edu.cn/git/CocoaPods/Specs.git:
+    - Alamofire
+    - SnapKit
 
 SPEC CHECKSUMS:
   Alamofire: 87bd8c952f9a4454320fce00d9cc3de57bcadaf5
@@ -85,6 +86,6 @@ SPEC CHECKSUMS:
   SwiftyUserDefaults: 6a1951df1daa19337862b677dd9a4b9bd4c288cd
   TOCropViewController: 3105367e808b7d3d886a74ff59bf4804e7d3ab38
 
-PODFILE CHECKSUM: 2f70507e2ce33d6a55f71ffc78c42a1bfbe488dd
+PODFILE CHECKSUM: 9ce34c7bc8d3df3c8ae9080278cedf8d741bfc88
 
 COCOAPODS: 1.11.3
