@@ -1,7 +1,7 @@
 //
 //  TOCropView.m
 //
-//  Copyright 2015-2018 Timothy Oliver. All rights reserved.
+//  Copyright 2015-2022 Timothy Oliver. All rights reserved.
 //
 //  Permission is hereby granted, free of charge, to any person obtaining a copy
 //  of this software and associated documentation files (the "Software"), to
@@ -1080,7 +1080,6 @@ typedef NS_ENUM(NSInteger, TOCropViewOverlayEdge) {
         frame.size.height = frame.size.width;
     } else {
         frame.size.height = ceilf(cropBoxFrame.size.height * scale);
-        frame.size.height = MIN(imageSize.height, frame.size.height);
     }
     frame.size.height = MIN(imageSize.height, frame.size.height);
 

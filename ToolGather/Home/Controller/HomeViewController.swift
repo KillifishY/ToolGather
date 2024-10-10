@@ -63,6 +63,18 @@ extension HomeViewController: UITableViewDelegate,UITableViewDataSource  {
 
         case .FSPageView:
             router?.gotoHomeSubmodule(.FSPageView, params: nil)
+            
+        case .CollectionView:
+            router?.gotoHomeSubmodule(.CollectionView, params: nil)
+            
+        case .PhotoPiker:
+            router?.gotoHomeSubmodule(.PhotoPiker, params: nil)
+            
+        case .SoulBall:
+            router?.gotoHomeSubmodule(.SoulBall, params: nil)
+            
+        case .ImageBlur:
+            router?.gotoHomeSubmodule(.ImageBlur, params: nil)
 
 //        case .Model_To_Dictionary:
 //            router?.gotoHomeSubmodule(.Model_To_Dictionary, params: nil)

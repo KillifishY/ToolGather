@@ -1,7 +1,7 @@
 # TOCropViewController
 
 <p align="center">
-<img src="https://github.com/TimOliver/TOCropViewController/raw/main/Images/screenshot.jpg" width="900" style="margin:0 auto" />
+<img src="https://github.com/TimOliver/TOCropViewController/raw/main/Images/screenshot.png" width="840" style="margin:0 auto" />
 </p>
 
 [![CI](https://github.com/TimOliver/TOCropViewController/workflows/CI/badge.svg)](https://github.com/TimOliver/TOCropViewController/actions?query=workflow%3ACI)
@@ -9,9 +9,6 @@
 [![Carthage compatible](https://img.shields.io/badge/Carthage-compatible-4BC51D.svg?style=flat)](https://github.com/Carthage/Carthage)
 [![GitHub license](https://img.shields.io/badge/license-MIT-blue.svg)](https://raw.githubusercontent.com/TimOliver/TOCropViewController/master/LICENSE)
 [![Platform](https://img.shields.io/cocoapods/p/TOCropViewController.svg?style=flat)](http://cocoadocs.org/docsets/TOCropViewController)
-[![PayPal](https://img.shields.io/badge/paypal-donate-blue.svg)](https://www.paypal.com/cgi-bin/webscr?cmd=_s-xclick&hosted_button_id=M4RKULAVKV7K8)
-[![Twitch](https://img.shields.io/badge/twitch-timXD-6441a5.svg)](http://twitch.tv/timXD)
-
 
 `TOCropViewController` is an open-source `UIViewController` subclass to crop out sections of `UIImage` objects, as well as perform basic rotations. It is excellent for things like editing profile pictures, or sharing parts of a photo online. It has been designed with the iOS Photos app editor in mind, and as such, behaves in a way that should already feel familiar to users of iOS.
 
@@ -20,8 +17,10 @@ For Swift developers, `CropViewController` is a Swift wrapper that completely en
 #### Proudly powering apps by
 
 <p align="center">
-<img src="https://github.com/TimOliver/TOCropViewController/raw/main/Images/users.png" width="900" style="margin:0 auto" />
+<img src="https://github.com/TimOliver/TOCropViewController/raw/main/Images/users.png" width="840" style="margin:0 auto" />
 </p>
+
+_Looking for something more? If `TOCropViewController` doesn't meet your exact requirements, please consider [IMG.LY](https://img.ly/?via=tim) with video editing and photo filter capabilities instead! (Disclaimer: Affiliate Link)_
 
 ## Features
 * Crop images by dragging the edges of a grid overlay.
@@ -33,7 +32,7 @@ For Swift developers, `CropViewController` is a Swift wrapper that completely en
 * The choice of having the controller return the cropped image to a delegate, or immediately pass it to a `UIActivityViewController`.
 * A custom animation and layout when the device is rotated to landscape mode.
 * Custom 'opening' and 'dismissal' animations.
-* Localized in 18 languages.
+* Localized in 28 languages.
 
 ## System Requirements
 iOS 8.0 or above
@@ -254,4 +253,4 @@ Thanks also goes to `TOCropViewController`'s growing list of [contributors](http
 iOS Device mockups used in the screenshot created by [Pixeden](http://www.pixeden.com).
 
 ## License
-TOCropViewController is licensed under the MIT License, please see the [LICENSE](LICENSE) file. ![analytics](https://ga-beacon.appspot.com/UA-5643664-16/TOCropViewController/README.md?pixel)
+TOCropViewController is licensed under the MIT License, please see the [LICENSE](LICENSE) file.

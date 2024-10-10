@@ -9,16 +9,16 @@
 [![Platform](https://img.shields.io/cocoapods/p/DeviceKit.svg?style=flat)](http://cocoadocs.org/docsets/DeviceKit)
 
 
-| Branch | Build Status | Versions |
-|:---------|:--------------:|:----------:|
-| **master** |[![Build Status](https://travis-ci.org/devicekit/DeviceKit.svg?branch=master)](https://travis-ci.org/devicekit/DeviceKit)| ≥ 2.0 |
-| **Swift 4 - 4.2** |[![Build Status](https://travis-ci.org/devicekit/DeviceKit.svg?branch=swift-4)](https://travis-ci.org/devicekit/DeviceKit)| ≥ 1.3 < 1.13 |
-| **Swift 3** |[![Build Status](https://travis-ci.org/devicekit/DeviceKit.svg?branch=swift-3)](https://travis-ci.org/devicekit/DeviceKit)| ≥ 1.0 < 1.3 |
-| **Swift 2.3** |[![Build Status](https://travis-ci.org/devicekit/DeviceKit.svg?branch=swift-2.3-unsupported)](https://travis-ci.org/devicekit/DeviceKit)| < 1.0 |
+| Branch | Versions |
+|:---------|:----------:|
+| **master** | ≥ 2.0 |
+| **Swift 4 - 4.2** | ≥ 1.3 < 1.13 |
+| **Swift 3** | ≥ 1.0 < 1.3 |
+| **Swift 2.3** | < 1.0 |
 
 `DeviceKit` is a value-type replacement of [`UIDevice`](https://developer.apple.com/library/ios/documentation/UIKit/Reference/UIDevice_Class/).
 
-## Current version 4.6.0.
+## Current version 5.0.0
 See our detailed [changelog](CHANGELOG.md) for the latest features, improvements and bug fixes.
 
 ## Features
@@ -41,9 +41,9 @@ See our detailed [changelog](CHANGELOG.md) for the latest features, improvements
 
 ## Requirements
 
-- iOS 9.0+ (linking against iOS 9.3 required)
-- tvOS 9.0+ (linking against tvOS 9.2 required)
-- watchOS 2.0+
+- iOS 11.0+
+- tvOS 11.0+
+- watchOS 4.0+
 
 ## Installation
 DeviceKit can be installed in various ways.

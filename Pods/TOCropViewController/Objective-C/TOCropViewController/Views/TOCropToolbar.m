@@ -1,7 +1,7 @@
 //
 //  TOCropToolbar.h
 //
-//  Copyright 2015-2018 Timothy Oliver. All rights reserved.
+//  Copyright 2015-2022 Timothy Oliver. All rights reserved.
 //
 //  Permission is hereby granted, free of charge, to any person obtaining a copy
 //  of this software and associated documentation files (the "Software"), to
@@ -141,6 +141,10 @@
     _resetButton.enabled = NO;
     [_resetButton setImage:[TOCropToolbar resetImage] forState:UIControlStateNormal];
     [_resetButton addTarget:self action:@selector(buttonTapped:) forControlEvents:UIControlEventTouchUpInside];
+    _resetButton.accessibilityLabel = NSLocalizedStringFromTableInBundle(@"Reset",
+                                                                         @"TOCropViewControllerLocalizable",
+                                                                         resourceBundle,
+                                                                         nil);
     [self addSubview:_resetButton];
 }
 

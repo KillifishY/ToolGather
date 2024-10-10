@@ -1,9 +1,9 @@
 # Uncomment the next line to define a global platform for your project
 
-platform :ios, '10.0'
+#platform :ios, '12.0'
 # For CocoaPods 1.8.0 或以上版本，使用cdn来避免clone master，加快pod update的速度。
-#source 'https://github.com/CocoaPods/Specs.git'
-source 'https://cdn.cocoapods.org/'
+source 'https://gitee.com/mirrors/CocoaPods-Specs.git'
+#source 'https://cdn.cocoapods.org/'
 #source 'https://mirrors.tuna.tsinghua.edu.cn/git/CocoaPods/Specs.git'
 
 target 'ToolGather' do
@@ -49,5 +49,15 @@ target 'ToolGather' do
   pod 'AnimatedCollectionViewLayout'
   pod "ESTabBarController-swift"
   pod 'FoldingCell'
+  pod 'amrnb'
+#  pod 'HXPhotoPicker', '~> 4.0.0'
+end
 
+post_install do|installer|
+  #最小版本支持11.0
+  installer.pods_project.targets.each do |target|
+    target.build_configurations.each do |config|
+      config.build_settings['IPHONEOS_DEPLOYMENT_TARGET'] = '12.0'
+    end
+  end
 end

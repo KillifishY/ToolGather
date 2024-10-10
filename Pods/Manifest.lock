@@ -1,13 +1,13 @@
 PODS:
-  - Alamofire (5.6.1)
+  - Alamofire (5.7.1)
   - AnimatedCollectionViewLayout (1.1.0)
   - AvoidCrash (2.5.2)
-  - DeviceKit (4.6.0)
+  - DeviceKit (5.0.0)
   - ESTabBarController-swift (2.8.0)
   - FoldingCell (5.0.2)
   - FSPagerView (0.8.3)
   - HandyJSON (5.0.2)
-  - Kingfisher (6.3.1)
+  - Kingfisher (7.9.0)
   - MarqueeLabel (4.0.5)
   - Moya (15.0.0):
     - Moya/Core (= 15.0.0)
@@ -23,7 +23,7 @@ PODS:
   - SnapKit (5.0.1)
   - SwiftyJSON (5.0.1)
   - SwiftyUserDefaults (4.0.0)
-  - TOCropViewController (2.6.0)
+  - TOCropViewController (2.6.1)
 
 DEPENDENCIES:
   - Alamofire
@@ -45,7 +45,7 @@ DEPENDENCIES:
   - TOCropViewController
 
 SPEC REPOS:
-  trunk:
+  https://gitee.com/mirrors/CocoaPods-Specs.git:
     - Alamofire
     - AnimatedCollectionViewLayout
     - AvoidCrash
@@ -66,15 +66,15 @@ SPEC REPOS:
     - TOCropViewController
 
 SPEC CHECKSUMS:
-  Alamofire: 87bd8c952f9a4454320fce00d9cc3de57bcadaf5
+  Alamofire: 0123a34370cb170936ae79a8df46cc62b2edeb88
   AnimatedCollectionViewLayout: 0c1a38c4be115c525c887be183fc91ef65737c5d
   AvoidCrash: 28c6916fe19bd2b84126b8dec7cbe61c9a12741d
-  DeviceKit: 834dd8aa1be53cd85364d8f49aa5d98bfac397c4
+  DeviceKit: 0fd016a2cb67aca17c33dc23171cac270131eb88
   ESTabBarController-swift: 05593a6ad64700b03c0eb60ff625916370aa4136
   FoldingCell: f92eb5fb9842319e7cd08c71533c98408b785099
   FSPagerView: 670405b2f18e2a87fa37f20b00de783e562c25a8
   HandyJSON: 9e4e236f5d2dbefad5155a77417bbea438201c03
-  Kingfisher: 016c8b653a35add51dd34a3aba36b580041acc74
+  Kingfisher: 59f908b6d2f403b0a3e539debb0eec05cb27002c
   MarqueeLabel: 00cc0bcd087111dca575878b3531af980559707d
   Moya: 138f0573e53411fb3dc17016add0b748dfbd78ee
   NotificationBannerSwift: 7021be2338f8f29cf424b0aca43da462bf9e2a1a
@@ -83,8 +83,8 @@ SPEC CHECKSUMS:
   SnapKit: 97b92857e3df3a0c71833cce143274bf6ef8e5eb
   SwiftyJSON: 2f33a42c6fbc52764d96f13368585094bfd8aa5e
   SwiftyUserDefaults: 6a1951df1daa19337862b677dd9a4b9bd4c288cd
-  TOCropViewController: 3105367e808b7d3d886a74ff59bf4804e7d3ab38
+  TOCropViewController: edfd4f25713d56905ad1e0b9f5be3fbe0f59c863
 
-PODFILE CHECKSUM: 0243e75702f1f5ff8ba0fdae1e154e1dba53d76a
+PODFILE CHECKSUM: f0f6fd6c4d8c407f7d52b914d86dcb51ed28bb3f
 
-COCOAPODS: 1.11.3
+COCOAPODS: 1.12.1

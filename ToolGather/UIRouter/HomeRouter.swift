@@ -16,6 +16,16 @@ enum HomeSubmodule: Int {
     ///FSPageView使用
     case FSPageView
     
+    ///自定义Collection
+    case CollectionView
+
+    ///相册
+    case PhotoPiker
+    
+    case SoulBall
+    
+    case ImageBlur
+
     ///字典转模型 反射
     case Model_To_Dictionary
     
@@ -31,86 +41,114 @@ enum HomeSubmodule: Int {
     ///人脸识别
     case faceRecognition
     
+    
     //["alamofire + moya + HandyJson使用", "DSBridge H5和原生的交互", "反射_基本用法" ,"反射_模型转字典", "WCDB数据库", "WebRTC 音视频直播"]
     var modualDescribtion : String {
         switch self {
         case .photoList:
-           return "alamofire + moya + HandyJson使用"
+            return "alamofire + moya + HandyJson使用"
+            
+        case .FSPageView:
+            return "FSPageView使用"
+            
+        case .CollectionView:
+            return "自定义Collection"
+            
+        case .PhotoPiker:
+            return "自定义相册"
+            
+        case .SoulBall:
+            return "星球"
+            
+        case .ImageBlur:
+            return "高斯模糊"
 
-            case .FSPageView:
-               return "FSPageView使用"
-//
-//            case .Model_To_Dictionary:
-//               return "反射_模型转字典"
-//
-//            case .mirrorVC:
-//               return "反射_基本用法"
-//
-//            case .WCDB_VC:
-//               return "WCDB数据库"
-//
-//            case .WebRTC_VC:
-//               return "WebRTC 音视频直播"
-//
-//            case .faceRecognition:
-//               return "人脸识别"
+            //
+            //            case .Model_To_Dictionary:
+            //               return "反射_模型转字典"
+            //
+            //            case .mirrorVC:
+            //               return "反射_基本用法"
+            //
+            //            case .WCDB_VC:
+            //               return "WCDB数据库"
+            //
+            //            case .WebRTC_VC:
+            //               return "WebRTC 音视频直播"
+            //
+            //            case .faceRecognition:
+            //               return "人脸识别"
         default :
             return ""
-            break
         }
     }
     
-    static let count = 7
+    static let count = 9
 }
 
 class HomeRouter {
     
     weak var contextViewController: HomeViewController?
-
+    
     init(_ contextViewController: HomeViewController) {
         self.contextViewController = contextViewController
     }
 }
 
 extension HomeRouter: HomeRouterHandle {
-
+    
     // MARK: - 跳转到相应的模块
     func gotoHomeSubmodule(_ submodule: HomeSubmodule, params: Dictionary<String, Any>?) {
-
+        
         switch submodule {
             
-            case .photoList:
-
-                let vc = SwiftyJSON_HandyJson_VC.init()
-                self.contextViewController?.navigationController?.pushViewController(vc, animated: true)
-
-            case .FSPageView:
-                let vc = YLYPageViewController.init()
-                self.contextViewController?.navigationController?.pushViewController(vc, animated: true)
-
-//            case .Model_To_Dictionary:
-//                let vc = Model_To_Dictionary.init()
-//                self.contextViewController?.navigationController?.pushViewController(vc, animated: true)
-//
-//            case .mirrorVC:
-//                let vc = Mirror_VC.init()
-//                self.contextViewController?.navigationController?.pushViewController(vc, animated: true)
-//
-//
-//            case .WCDB_VC:
-//                let vc = WCDB_VC.init()
-//                self.contextViewController?.navigationController?.pushViewController(vc, animated: true)
-//
-//            case .WebRTC_VC:
-//                let vc = WebRTC_VC.init()
-//                self.contextViewController?.navigationController?.pushViewController(vc, animated: true)
-//
-//            case .faceRecognition:
-//                let vc = FaceDetectionViewController.init()
-//                self.contextViewController?.navigationController?.pushViewController(vc, animated: true)
+        case .photoList:
             
-            default :
-                break
+            let vc = SwiftyJSON_HandyJson_VC.init()
+            self.contextViewController?.navigationController?.pushViewController(vc, animated: true)
+            
+        case .FSPageView:
+            let vc = YLYPageViewController.init()
+            self.contextViewController?.navigationController?.pushViewController(vc, animated: true)
+            
+        case .CollectionView:
+            let vc = LYCollectionViewController.init()
+            self.contextViewController?.navigationController?.pushViewController(vc, animated: true)
+            
+        case .PhotoPiker:
+            let vc = LYPhotoPikerController.init()
+            self.contextViewController?.navigationController?.pushViewController(vc, animated: true)
+            
+        case .SoulBall:
+            let vc = SoulBall.init()
+            self.contextViewController?.navigationController?.pushViewController(vc, animated: true)
+
+        case .ImageBlur:
+            let vc = ImageBlur.init()
+            self.contextViewController?.navigationController?.pushViewController(vc, animated: true)
+            //            case .Model_To_Dictionary:
+            //                let vc = Model_To_Dictionary.init()
+            //                self.contextViewController?.navigationController?.pushViewController(vc, animated: true)
+            //
+            //            case .mirrorVC:
+            //                let vc = Mirror_VC.init()
+            //                self.contextViewController?.navigationController?.pushViewController(vc, animated: true)
+            //
+            //
+            //            case .WCDB_VC:
+            //                let vc = WCDB_VC.init()
+            //                self.contextViewController?.navigationController?.pushViewController(vc, animated: true)
+            //
+            //            case .WebRTC_VC:
+            //                let vc = WebRTC_VC.init()
+            //                self.contextViewController?.navigationController?.pushViewController(vc, animated: true)
+            //
+            //            case .faceRecognition:
+            //                let vc = FaceDetectionViewController.init()
+            //                self.contextViewController?.navigationController?.pushViewController(vc, animated: true)
+            
+        default :
+            break
         }
     }
 }
